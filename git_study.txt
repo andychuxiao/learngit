@@ -1,4 +1,4 @@
-
+﻿
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com
 
@@ -223,7 +223,10 @@ Git中从远程的分支获取最新的版本到本地有这样2个命令：
 git fetch origin master:temp
 git diff temp 
 git merge temp
-从远程获取最新的版本到本地的temp分支，之后再进行比较合并
+从远程获取最新的版本到本地的temp分支，之后再进行比较，然后合并
 2. git pull：相当于是从远程获取最新版本并merge到本地
 git pull origin master述命令其实相当于git fetch 和 git merge
 在实际使用中，git fetch更安全一些因为在merge前，我们可以查看更新情况，然后再决定是否合并
+
+
+git分支管理
