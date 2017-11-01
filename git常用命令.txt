@@ -1,6 +1,11 @@
+
+一、如果本地已经有文件
 1.在当前目录中用git init进行初始化
 2.git add file添加到stage
 3.git commit -m “”提交
 4.github新建一个同名的库
 5.git remote add origin git@github.com:andychuxiao/*****.git
 6.git push -u origin master推送至远程（第一次使用-u）
+
+二、如果本地没有文件,则在想保存远程库的本地文件夹下：
+git clone git@github.com:andychuxiao/learngit.git
