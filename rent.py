@@ -3,12 +3,12 @@ import time
 
 mc = minecraft.Minecraft.create()
 
-X1 = 10
-Z1 = 10
-X2 = 10
-Z2 = 10
+X1 = -152
+Z1 = -17
+X2 = -143
+Z2 = -8
 HOME_X = X2 + 2
-HOME_Y = 10
+HOME_Y = 0
 HOME_Z = Z2 + 2
 rent = 0
 inField = 0
@@ -22,6 +22,7 @@ while True:
         inField = inField + 1
     else:
         inField = 0
-    if inField > 3:
+    if inField > 2:
         mc.postToChat("Too slow!")
         mc.player.setPos(HOME_X, HOME_Y, HOME_Z)
+        rent = 0
