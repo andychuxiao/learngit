@@ -1,0 +1,27 @@
+安装gitbook：
+
+1、安装node.js，到 https://nodejs.org/#download上下载安装node.js
+解压
+./configure
+make
+make install 
+成功执行后，npm就被安装好了。
+我直接下载的.pkg 安装包，直接安装完成了，没有使用命令行。
+2、 gitbook 安装
+sudo npm install -g gitbook-cli
+需要使用sudo 安装，否则会报错，也有资料说可以去掉 －g，不要全局安装，但是我这里没有尝试。使用sudo 安装成功！
+3、查看gitbook版本
+这时执行  gitbook -V命令，注意是大写的V。
+4、 获取最新版本
+gitbook fetch
+
+5、使用gitbook创建笔记
+
+5.1创建笔记的目录
+mkdir  testbook
+5.2 创建READM.md
+5.3 创建 SUMMARY.md 
+输入笔记的目录结构，使用markdown语法。
+6、生成html病声称 预览
+gitbook serve
+7、在浏览器中输入 http://localhost:4000 进行预览。
